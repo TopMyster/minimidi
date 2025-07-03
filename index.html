@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DigiPiano</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <center>
+        <div id="piano">
+        
+            <button class="notes" onclick="playC()"></button>
+            <button class="snotes" onclick="playDb()"></button>
+            <button class="notes" onclick="playD()"></button>
+            <button class="snotes" onclick="playEb()"></button>
+            <button class="notes" onclick="playE()"></button>
+            <button class="notes" onclick="playF()"></button>
+            <button class="snotes" onclick="playGb()"></button>
+            <button class="notes" onclick="playG()"></button>
+            <button class="snotes" onclick="playAb()"></button>
+            <button class="notes" onclick="playA()"></button>
+            <button class="snotes" onclick="playBb()"></button>
+            <button class="notes" onclick="playB()"></button>
+            <div id="screen">
+                <h1 id="currentnote">Digipiano</h1>
+            </div>
+        </div>
+            <div id="powerdiv">
+            <div id="power">
+        </div>
+        <p>Power</p>
+    </div>
+
+
+        <button onclick="drum()" id="drumdiv"><img width="25px"src="drum.png">
+        <p>Drum</p></button>
+
+        <button onclick="cymbol()" id="cymboldiv"><img width="25px"src="cymbol.png">
+        <p>Cymbol</p></button>
+
+        <button onclick="triangle()" id="trianglediv"><img width="18px"src="triangle.png">
+        <p>Triangle</p></button>
+
+        <button onclick="increaseVolume()" id="increaseVolumediv"><img width="25px"src="">
+        <p id="iv">+</p></button>
+
+        <button onclick="decreaseVolume()" id="decreaseVolumediv"><img width="25px"src="">
+        <p id="dv">- </p></button>
+
+        <button onclick="metronome()" ondblclick="metronome2x()" id="metronomediv"><img width="10px"src="metronome.png">
+        </button>
+
+        <button onclick="maracas()" id="maracasdiv"><img width="25px"src="maracas.png">
+        <p>Maracas</p></button>
+        
+    </center>
+    </body>
+    <script src="script.js"></script>
+</html>
+

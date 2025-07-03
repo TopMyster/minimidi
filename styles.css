@@ -1,0 +1,276 @@
+.notes {
+    height: 350px;
+    width: 100px;
+    border: none;
+    border-radius: 6px;
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+    margin: 0px .2px;
+    top: 120px;
+    position: relative;
+    text-shadow: 1px 2px 0px rgba(152, 152, 152, 0.672);
+    box-shadow: inset 4px 4px 16px rgba(0,0,0,0.3),  .8px 10px 0px rgb(168, 166, 166)
+    
+}
+
+.snotes {
+    z-index: 3;
+    position: absolute;
+    height: 200px;
+    width: 35px;
+    border: none;
+    top: 140px;
+    border-radius: 6px;
+    background-color: rgb(13, 13, 13);
+    text-align: end;
+    font-size: 20px;
+    text-shadow: 1px 2px 0px rgba(152, 152, 152, 0.672);
+    box-shadow: inset 0 2px 16px rgba(0,0,0,0.3),  6px 0px 0px rgb(41, 41, 41)
+}
+
+.snotes:active {
+    animation: pressharp 1.2s;
+}
+
+@keyframes pressharp {
+    0% {
+        box-shadow:  4px 0px 0px rgb(47, 47, 47), inset 0 4px 24px rgba(0,0,0,0.4);
+  transform: translateY(4px);
+
+    }
+    50% {
+        box-shadow: 2px 3px 0px 4px 6px 0px rgb(47, 47, 47), inset 0 4px 24px rgba(0,0,0,0.4);
+  transform: translateY(4px);
+
+    }
+    100% {
+        box-shadow: 2px 3px 0px 4px 6px 0px rgb(47, 47, 47), inset 0 4px 24px rgba(0,0,0,0.4);
+  transform: translateY(4px);
+
+    }
+}
+
+.notes:active {
+    animation: press 1.2s;
+}
+
+
+@keyframes press {
+    0% {
+        box-shadow: 1px 3px 0px rgb(168, 166, 166), inset 0 4px 24px rgba(0, 0, 0, 0.528);
+  transform: translateY(1px);
+
+    }
+    50% {
+        box-shadow: 1px 3px 0px rgb(168, 166, 166), inset 0 4px 24px rgba(0,0,0,0.4);
+  transform: translateY(2px);
+
+    }
+    100% {
+        box-shadow: 1px 3px 0px rgb(168, 166, 166), inset 0 4px 24px rgba(0,0,0,0.4);
+  transform: translateY(4px);
+
+    }
+}
+
+#piano {
+    background-color: black;
+    padding: 25px 10px;
+    border-color: black;
+    text-align: center;
+    width: 800px;
+    height: 500px;
+    border-radius: 40px;
+    position: relative;
+    top: 60px;
+    box-shadow: inset 8px 8px 10px #4d4d4dd8, 7px 7px 38px rgba(27, 27, 27, 0.2);
+}
+
+@font-face {
+    font-family: 'Seven Segment';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Seven Segment'), url('Seven Segment.woff') format('woff');
+}
+
+#screen {
+    background-color: rgb(71, 71, 251);
+    width: 300px;
+    height: 70px;
+    position: relative;
+    margin-left: 230px;
+    margin-right: 230px;
+    top: -345px;
+    color: rgb(238, 238, 238);
+    box-shadow: inset 2px 4px 24px rgba(0, 0, 0, 0.483);
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
+    text-align: center;      
+    font-family: 'Seven Segment';
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+#drumdiv {
+    border-radius: 40px;
+     display: flex;
+    align-items: center;  
+    justify-content: center;  
+    text-align: center;   
+    width: 75px;
+    height: 30px;
+    position: relative;
+    bottom: 500px;
+    left: 200px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+    box-shadow: inset 1px 2px 7px #7b7b7bd8
+}
+
+#drumdiv:active {
+    background-color: red;
+    box-shadow: inset 2px 5px 10px #a30101d8, 0px 0px 6px rgba(255, 77, 77, 0.847);
+}
+
+#cymboldiv {
+    border-radius: 40px;
+     display: flex;
+    align-items: center;  
+    justify-content: center;  
+    text-align: center;   
+    width: 75px;
+    height: 30px;
+    position: relative;
+    bottom: 530px;
+    left: 300px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+    box-shadow: inset 1px 2px 7px #7b7b7bd8
+}
+
+#cymboldiv:active {
+    background-color: red;
+    box-shadow: inset 2px 5px 10px #a30101d8, 0px 0px 6px rgba(255, 77, 77, 0.847);
+}
+
+#increaseVolumediv {
+    border-radius: 40px;
+     display: flex;
+    align-items: center;  
+    justify-content: center;  
+    text-align: center;   
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 600px;
+    right: 245px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+    box-shadow: inset 1px 2px 7px #7b7b7bd8;
+}
+
+#increaseVolumediv:active {
+    background-color: red;
+    box-shadow: inset 2px 5px 10px #a30101d8, 0px 0px 6px rgba(255, 77, 77, 0.847);
+}
+
+#decreaseVolumediv {
+    border-radius: 40px;
+     display: flex;
+    align-items: center;  
+    justify-content: center;  
+    text-align: center;   
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 580px;
+    right: 245px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+    box-shadow: inset 1px 2px 7px #7b7b7bd8
+}
+
+#decreaseVolumediv:active {
+    background-color: red;
+    box-shadow: inset 2px 5px 10px #a30101d8, 0px 0px 6px rgba(255, 77, 77, 0.847);
+}
+
+#trianglediv {
+    border-radius: 40px;
+     display: flex;
+    align-items: center;  
+    justify-content: center;  
+    text-align: center;   
+    width: 75px;
+    height: 30px;
+    position: relative;
+    bottom: 520px;
+    left: 300px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+    box-shadow: inset 1px 2px 7px #7b7b7bd8
+}
+
+#trianglediv:active {
+    background-color: red;
+    box-shadow: inset 2px 5px 10px #a30101d8, 0px 0px 6px rgba(255, 77, 77, 0.847);
+}
+
+
+#maracasdiv {
+    border-radius: 40px;
+     display: flex;
+    align-items: center;  
+    justify-content: center;  
+    text-align: center;   
+    width: 75px;
+    height: 30px;
+    position: relative;
+    bottom: 640px;
+    left: 200px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+    box-shadow: inset 1px 2px 7px #7b7b7bd8;
+}
+
+#maracasdiv:active {
+    background-color: red;
+    box-shadow: inset 2px 5px 10px #a30101d8, 0px 0px 6px rgba(255, 77, 77, 0.847);
+}
+
+#dv {
+    margin-right: 6.2px;
+    position: relative;
+}
+
+#iv {
+    margin-right: 4.5px;
+    position: relative;
+}
+
+#metronomediv {
+        border-radius: 40px;
+     display: flex;
+    align-items: center;  
+    justify-content: center;  
+    text-align: center;   
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 635px;
+    right: 295px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+    box-shadow: inset 1px 2px 7px #7b7b7bd8
+}
+
+
