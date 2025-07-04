@@ -1,4 +1,6 @@
  let globalVolume = 0.5;
+ let bassmode
+ bassmode = false
 
         function setAndPlayAudio(src) {
             let audio = new Audio(src);
@@ -8,43 +10,71 @@
 
 function playC() {
     document.getElementById('currentnote').textContent = 'C';
-    setAndPlayAudio('c.wav');
+    if (bassmode ===  true) {
+        setAndPlayAudio('bassc.wav');
+    } else if(bassmode === false) {
+        setAndPlayAudio('c.wav');
+    }
     audio.play();
 }
 
 function playD() {
     document.getElementById('currentnote').textContent = 'D';
-    setAndPlayAudio('d.wav');
+    if (bassmode ===  true) {
+        setAndPlayAudio('bassd.wav');
+    } else if(bassmode ===  false) {
+        setAndPlayAudio('d.wav');
+    }
     audio.play();
 }
 
 function playE() {
     document.getElementById('currentnote').textContent = 'E';
-    setAndPlayAudio('e.wav');
+    if (bassmode ===  true) {
+        setAndPlayAudio('basse.mp3');
+    } else if(bassmode ===  false) {
+        setAndPlayAudio('e.wav');
+    }
     audio.play();
 }
 
 function playF() {
     document.getElementById('currentnote').textContent = 'F';
-    setAndPlayAudio('f.wav');
+    if (bassmode ===  true) {
+        setAndPlayAudio('bassf.wav');
+    } else if(bassmode ===  false) {
+        setAndPlayAudio('f.wav');
+    }
     audio.play();
 }
 
 function playG() {
     document.getElementById('currentnote').textContent = 'G';
-    setAndPlayAudio('g.wav');
+    if (bassmode ===  true) {
+        setAndPlayAudio('bassg.mp3');
+    } else if(bassmode === false) {
+        setAndPlayAudio('g.wav');
+    }
     audio.play();
 }
 
 function playA() {
     document.getElementById('currentnote').textContent = 'A';
-    setAndPlayAudio('a.wav');
+   if (bassmode ===  true) {
+        setAndPlayAudio('basss.wav');
+    } else if(bassmode ===  false) {
+        setAndPlayAudio('a.wav');
+    }
     audio.play();
 }
 
 function playB() {
     document.getElementById('currentnote').textContent = 'B';
-    setAndPlayAudio('b.wav');
+    if (bassmode ===  true) {
+        setAndPlayAudio('bassb.mp3');
+    } else if(bassmode ===  false) {
+        setAndPlayAudio('b.wav');
+    }
     audio.play();
 }
 
@@ -129,4 +159,20 @@ function maracas() {
         function metronome2x() {
             setAndPlayAudio('metronome.mp3')
             document.getElementById('currentnote').textContent = 'Metro 2X';
+        }
+
+        function bass() {
+            bassmode = true
+            document.getElementById('bassdiv').style.backgroundColor = 'red'
+            document.getElementById('bassdiv').style.boxShadow = 'inset 2px 5px 10px #a30101d8, 0px 0px 6px rgba(255, 77, 77, 0.847)'
+            document.getElementById('sopdiv').style.boxShadow = 'inset 1px 2px 7px #7b7b7bd8'
+            document.getElementById('sopdiv').style.backgroundColor = 'rgba(255, 255, 255, 0)'
+        }
+
+            function sop() {
+            bassmode = false
+            document.getElementById('sopdiv').style.backgroundColor = 'red'
+            document.getElementById('sopdiv').style.boxShadow = 'inset 2px 5px 10px #a30101d8, 0px 0px 6px rgba(255, 77, 77, 0.847)'
+            document.getElementById('bassdiv').style.boxShadow = 'inset 1px 2px 7px #7b7b7bd8'
+            document.getElementById('bassdiv').style.backgroundColor = 'rgba(255, 255, 255, 0)'
         }
