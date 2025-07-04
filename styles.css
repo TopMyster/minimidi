@@ -131,7 +131,8 @@ body {
     background-color: rgba(255, 255, 255, 0);
     color: white;
     border: none;
-    box-shadow: inset 1px 2px 7px #7b7b7bd8
+    box-shadow: inset 1px 2px 7px #7b7b7bd8;
+    padding: 15px 45px;
 }
 
 #drumdiv:active {
@@ -153,7 +154,8 @@ body {
     background-color: rgba(255, 255, 255, 0);
     color: white;
     border: none;
-    box-shadow: inset 1px 2px 7px #7b7b7bd8
+    box-shadow: inset 1px 2px 7px #7b7b7bd8;
+    padding: 15px 45px;
 }
 
 #cymboldiv:active {
@@ -219,7 +221,8 @@ body {
     background-color: rgba(255, 255, 255, 0);
     color: white;
     border: none;
-    box-shadow: inset 1px 2px 7px #7b7b7bd8
+    box-shadow: inset 1px 2px 7px #7b7b7bd8;
+    padding: 15px 45px;
 }
 
 #trianglediv:active {
@@ -237,12 +240,13 @@ body {
     width: 75px;
     height: 30px;
     position: relative;
-    bottom: 700px;
+    bottom: 730px;
     left: 200px;
     background-color: rgba(255, 255, 255, 0);
     color: white;
     border: none;
     box-shadow: inset 1px 2px 7px #7b7b7bd8;
+    padding: 15px 45px;
 }
 
 #maracasdiv:active {
@@ -253,6 +257,7 @@ body {
 #dv {
     margin-right: 6.2px;
     position: relative;
+    
 }
 
 #iv {
@@ -266,11 +271,11 @@ body {
     align-items: center;  
     justify-content: center;  
     text-align: center;   
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     position: relative;
     bottom: 635px;
-    right: 330px;
+    right: 350px;
     background-color: rgba(255, 255, 255, 0);
     color: white;
     border: none;
@@ -283,10 +288,10 @@ body {
     align-items: center;  
     justify-content: center;  
     text-align: center;   
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     position: relative;
-    bottom: 640px;
+    bottom: 655px;
     right: 295px;
     background-color: rgba(255, 255, 255, 0);
     color: white;
@@ -300,10 +305,10 @@ body {
     align-items: center;  
     justify-content: center;  
     text-align: center;   
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     position: relative;
-    bottom: 720px;
+    bottom: 745px;
     right: 295px;
     color: white;
     border: none;
