@@ -61,7 +61,7 @@ function playG() {
 function playA() {
     document.getElementById('currentnote').textContent = 'A';
    if (bassmode ===  true) {
-        setAndPlayAudio('basss.wav');
+        setAndPlayAudio('bassa.wav');
     } else if(bassmode ===  false) {
         setAndPlayAudio('a.wav');
     }
