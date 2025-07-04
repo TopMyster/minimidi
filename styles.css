@@ -2,7 +2,6 @@ body {
     overflow: hidden;
 }
 
-
 .notes {
     height: 350px;
     width: 100px;
@@ -271,6 +270,23 @@ body {
     height: 30px;
     position: relative;
     bottom: 635px;
+    right: 330px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+    box-shadow: inset 1px 2px 7px #7b7b7bd8
+}
+
+#bassdiv {
+    border-radius: 40px;
+     display: flex;
+    align-items: center;  
+    justify-content: center;  
+    text-align: center;   
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 640px;
     right: 295px;
     background-color: rgba(255, 255, 255, 0);
     color: white;
@@ -278,4 +294,20 @@ body {
     box-shadow: inset 1px 2px 7px #7b7b7bd8
 }
 
+#sopdiv {
+    border-radius: 40px;
+     display: flex;
+    align-items: center;  
+    justify-content: center;  
+    text-align: center;   
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 720px;
+    right: 295px;
+    color: white;
+    border: none;
+    background-color: red;
+    box-shadow: inset 2px 5px 10px #a30101d8, 0px 0px 6px rgba(255, 77, 77, 0.847);
+}
 
