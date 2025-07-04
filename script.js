@@ -163,6 +163,7 @@ function maracas() {
 
         function bass() {
             bassmode = true
+         document.getElementById('currentnote').textContent = 'bass';
             document.getElementById('bassdiv').style.backgroundColor = 'red'
             document.getElementById('bassdiv').style.boxShadow = 'inset 2px 5px 10px #a30101d8, 0px 0px 6px rgba(255, 77, 77, 0.847)'
             document.getElementById('sopdiv').style.boxShadow = 'inset 1px 2px 7px #7b7b7bd8'
@@ -171,6 +172,7 @@ function maracas() {
 
             function sop() {
             bassmode = false
+             document.getElementById('currentnote').textContent = 'treble';
             document.getElementById('sopdiv').style.backgroundColor = 'red'
             document.getElementById('sopdiv').style.boxShadow = 'inset 2px 5px 10px #a30101d8, 0px 0px 6px rgba(255, 77, 77, 0.847)'
             document.getElementById('bassdiv').style.boxShadow = 'inset 1px 2px 7px #7b7b7bd8'
