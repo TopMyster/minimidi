@@ -2,11 +2,11 @@
  let bassmode
  bassmode = false
 
-        function setAndPlayAudio(src) {
-            let audio = new Audio(src);
-            audio.volume = globalVolume;
-            audio.play();
-        }
+ function setAndPlayAudio(src) {
+    let audio = new Audio(src);
+    audio.volume = globalVolume;
+    audio.play();
+}
 
 function playC() {
     document.getElementById('currentnote').textContent = 'C';
@@ -131,50 +131,50 @@ function maracas() {
     audio.play();
 }
 
-        function increaseVolume() {
-            if (globalVolume < 1.0) {
-                globalVolume = Math.min(globalVolume + 0.1, 1.0);
-            }
-            document.getElementById('currentnote').textContent = Math.round([globalVolume * 100]) + '%';
-        }
+function increaseVolume() {
+    if (globalVolume < 1.0) {
+        globalVolume = Math.min(globalVolume + 0.1, 1.0);
+    }
+    document.getElementById('currentnote').textContent = Math.round([globalVolume * 100]) + '%';
+}
 
-        function decreaseVolume() {
-            if (globalVolume > 0.0) {
-                globalVolume = Math.max(globalVolume - 0.1, 0.0);
-            }
-            document.getElementById('currentnote').textContent = Math.round([globalVolume * 100]) + '%';
-        }
+function decreaseVolume() {
+    if (globalVolume > 0.0) {
+        globalVolume = Math.max(globalVolume - 0.1, 0.0);
+    }
+    document.getElementById('currentnote').textContent = Math.round([globalVolume * 100]) + '%';
+}
 
-        function metronome() {
-            let i = true
-            setAndPlayAudio('metronome.mp3')
-            document.getElementById('currentnote').textContent = 'Metro ON';
-            document.getElementById('metronomediv').style.backgroundColor = 'rgba(255, 77, 77, 0.847)'
-            document.getElementById('metronomediv').style.boxShadow = 'inset 2px 5px 10px #a30101d8, 0px 0px 6px rgba(255, 77, 77, 0.847)'
-            while (i == true) {
-                audio.play()
-            }
-        }
+function metronome() {
+    let i = true
+    setAndPlayAudio('metronome.mp3')
+    document.getElementById('currentnote').textContent = 'Metro ON';
+    document.getElementById('metronomediv').style.backgroundColor = 'rgba(255, 77, 77, 0.847)'
+    document.getElementById('metronomediv').style.boxShadow = 'inset 2px 5px 10px #a30101d8, 0px 0px 6px rgba(255, 77, 77, 0.847)'
+    while (i == true) {
+        audio.play()
+    }
+}
 
-        function metronome2x() {
-            setAndPlayAudio('metronome.mp3')
-            document.getElementById('currentnote').textContent = 'Metro 2X';
-        }
+function metronome2x() {
+    setAndPlayAudio('metronome.mp3')
+    document.getElementById('currentnote').textContent = 'Metro 2X';
+}
 
-        function bass() {
-            bassmode = true
-         document.getElementById('currentnote').textContent = 'bass';
-            document.getElementById('bassdiv').style.backgroundColor = 'red'
-            document.getElementById('bassdiv').style.boxShadow = 'inset 2px 5px 10px #a30101d8, 0px 0px 6px rgba(255, 77, 77, 0.847)'
-            document.getElementById('sopdiv').style.boxShadow = 'inset 1px 2px 7px #7b7b7bd8'
-            document.getElementById('sopdiv').style.backgroundColor = 'rgba(255, 255, 255, 0)'
-        }
+function bass() {
+    bassmode = true
+    document.getElementById('currentnote').textContent = 'bass';
+    document.getElementById('bassdiv').style.backgroundColor = 'red'
+    document.getElementById('bassdiv').style.boxShadow = 'inset 2px 5px 10px #a30101d8, 0px 0px 6px rgba(255, 77, 77, 0.847)'
+    document.getElementById('sopdiv').style.boxShadow = 'inset 1px 2px 7px #7b7b7bd8'
+    document.getElementById('sopdiv').style.backgroundColor = 'rgba(255, 255, 255, 0)'
+}
 
-            function sop() {
-            bassmode = false
-             document.getElementById('currentnote').textContent = 'treble';
-            document.getElementById('sopdiv').style.backgroundColor = 'red'
-            document.getElementById('sopdiv').style.boxShadow = 'inset 2px 5px 10px #a30101d8, 0px 0px 6px rgba(255, 77, 77, 0.847)'
-            document.getElementById('bassdiv').style.boxShadow = 'inset 1px 2px 7px #7b7b7bd8'
-            document.getElementById('bassdiv').style.backgroundColor = 'rgba(255, 255, 255, 0)'
-        }
+function sop() {
+    bassmode = false
+    document.getElementById('currentnote').textContent = 'treble';
+    document.getElementById('sopdiv').style.backgroundColor = 'red'
+    document.getElementById('sopdiv').style.boxShadow = 'inset 2px 5px 10px #a30101d8, 0px 0px 6px rgba(255, 77, 77, 0.847)'
+    document.getElementById('bassdiv').style.boxShadow = 'inset 1px 2px 7px #7b7b7bd8'
+    document.getElementById('bassdiv').style.backgroundColor = 'rgba(255, 255, 255, 0)'
+}
