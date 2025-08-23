@@ -1,8 +1,8 @@
- let globalVolume = 0.5;
- let bassmode
- bassmode = false
+let globalVolume = 0.5;
+let bassmode
+bassmode = false
 
- function setAndPlayAudio(src) {
+function setAndPlayAudio(src) {
     let audio = new Audio(src);
     audio.volume = globalVolume;
     audio.play();
@@ -42,7 +42,7 @@ function playF() {
     document.getElementById('currentnote').textContent = 'F';
     if (bassmode ===  true) {
         setAndPlayAudio('bassf.wav');
-    } else if(bassmode ===  false) {
+    } else if (bassmode ===  false) {
         setAndPlayAudio('f.wav');
     }
     audio.play();
